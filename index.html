@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project 2</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <!-- Egen CSS -->
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <header>
+        <h1>Gender Inequality Worldwide</h1>
+    </header>
+	<div class="container-fluid">
+        <div class="col-md-9">
+            <!-- DATAMAPS -->
+            <div id="mapContainer"></div>
+            <h3 id="demo" style="text-align: center;"></h3>
+            <div class="slidecontainer">
+              <input type="range" min="1994" max="2014" value="1994" class="slider" id="myRange">
+            </div>
+            <img src="http://www.csc.kth.se/~sblomk/infoVis_gender_inequality/img/sankey.png">
+        </div>
+        <div class="col-md-3" id="sideBar">
+            <!-- SIDEBAR -->
+            <h2>Hungary</h2>
+                <ul>
+                  <li style="font-weight:bold;"">GII Rank: 49</li>
+                </ul>
+                <ul>
+                  <li>Female labour force: 46.4%</li>
+                  <li>Male labour force: 62.5%</li>
+                </ul>
+                <ul>
+                  <li>Female parliamentary seats: 10.1%</li>
+                  <li>Male parliamentary seats: 89.9%</li>
+                  <li>Females with at least secondary education: 95,6%</li>
+                  <li>Females with at least secondary education: 97,9%</li>
+                </ul>
+                <ul>
+                  <li>Adolescent birth rate: 1,8%</li>
+                  <li>Maternal mortality ratio: 1,7%</li>
+                </ul>
+            <img src="http://www.csc.kth.se/~sblomk/infoVis_gender_inequality/img/box.png">
+        </div>
+	</div>
+    <footer>
+        <p class="big">Made with love at KTH <3</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!-- D3.js library VERSION 3 för att det fuckar annars -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- topojson -->
+    <script src="node_modules/topojson/dist/topojson.min.js"></script>
+    <!-- datamaps -->
+    <script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
+
+    <script src="http://www.csc.kth.se/~sblomk/infoVis_gender_inequality/js/exampleMap.js"></script>
+    <script src="http://www.csc.kth.se/~sblomk/infoVis_gender_inequality/js/slider.js"></script>
+  </body>
+</html>
